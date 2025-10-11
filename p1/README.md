@@ -44,4 +44,10 @@ Para obtener la rota a seguir, primero he obtenido mi posicion actuial y la he c
 Una vez alcanzado un punto crítico, calculo por manhattan cual es el punto de retorno mas cercano, y despues hago una busqueda por anchura para obtener la ruta hasta ese punto de retorno, y se la sumo a la ruta que llevabamos calculada hasta ese momento.
 
 
+## Ejecución ruta planificada
 
+Para poder ejecutar la ruta planificada, podremos hacerlo por posicion, ya que tenemos el robot bien locaclizado. Comparando la posición actual y la posicion deseada, obtendremos el error, con el cual podemos sacar nuestras velocidades linear y angular para cumplir nuestro objetivo y navegar por toda la ruta planificada. 
+
+He considerado que si estoy mas cerca de 10 cm de la celda objetivo, he llegado a esa celda y paso a la siguiente de la lista.
+
+Para el ajuste de "v" y "w", lo he probado con muchos valores distintos kp, kd y ki de un pid, pero la forma en la que me parecia que lo hacia mejor, era sin que el pid haga nada (kp=1, kd=0, ki=0). Aun que de esta forma quiza va un poco lento, es la manera en la que he conseguido que el robot vaya mas recto por el centro de las celdillas, sin hacer nada de zig-zag.
