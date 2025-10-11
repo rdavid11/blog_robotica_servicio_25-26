@@ -7,7 +7,7 @@ David Pons Canet
 
 ## Objetivo
 
-Desarollar un algoritmo que consiga que la aspiradora cubra el espacio libre de una casa.
+Desarollar un algoritmo de cobertura BSA que consiga que la aspiradora cubra el espacio libre de una casa.
 
 
 ## Resumen
