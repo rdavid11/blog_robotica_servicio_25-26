@@ -1,12 +1,15 @@
-# 🗺️ Robot Autonomous Mapping & Obstacle Avoidance
+# P5
 
-Este proyecto implementa un sistema de **mapeo probabilístico**,
-**detección de obstáculos** y **navegación reactiva** para un robot
+David Pons Canet
+10/12/25
+
+Este proyecto implementa un sistema de mapeo probabilístico,
+detección de obstáculos y navegación reactiva para un robot
 móvil equipado con un sensor LIDAR de 360°. El robot explora el entorno
 actualizando un mapa de ocupación en tiempo real y evitando colisiones
 mediante un comportamiento reactivo simple basado en avance y giro.
 
-## 📌 Características principales
+## Características principales
 
 -   Ray tracing para actualizar celdas libres y ocupadas.\
 -   Uso completo del LIDAR (360 lecturas por ciclo).\
@@ -16,7 +19,7 @@ mediante un comportamiento reactivo simple basado en avance y giro.
 -   Visualización del mapa en WebGUI.\
 -   Bucle principal continuo con actualización y movimiento.
 
-## 🧠 Funcionamiento general
+## Funcionamiento general
 
 El robot procesa cada ciclo de la siguiente forma:
 
@@ -29,7 +32,7 @@ El robot procesa cada ciclo de la siguiente forma:
     -   Si hay obstáculo → gira hacia el lado con mayor espacio libre.\
 5.  Envía el mapa procesado a WebGUI para visualización.
 
-## 📁 Estructura del mapa
+## Estructura del mapa
 
 El sistema usa dos matrices:
 
@@ -45,7 +48,7 @@ Dimensiones del mapa:
 -   Ancho: 1500\
 -   Alto: 970
 
-## 🔧 Principales funciones
+## Principales funciones
 
 ### update_map()
 
@@ -69,7 +72,7 @@ Devuelve también hacia qué lado hay más espacio para girar.
 Convierte el mapa probabilístico en un mapa visual (blanco/negro/gris) y
 lo envía a WebGUI.
 
-## 🚀 Modos de navegación
+## Modos de navegación
 
 ### FORWARD
 
