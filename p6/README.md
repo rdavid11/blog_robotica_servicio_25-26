@@ -19,6 +19,8 @@ anteriormente.
 
 Si no vemos ningun tag, nos movemos referente al incremento de odom.
 
+Para movernos por el mapa usamos un bump and go.
+
 ## Matrices Transformacion Tags
 
 Para obtener las matrices de cada tag, primero tenemos que crear una matriz 4x4, 
