@@ -31,11 +31,11 @@ Sabiendo que el área a explorar es de 1000 m², he calculado la longitud del la
 
 Para la navegación y ejecución de la misión he utilizado una máquina de estados con tres modos:
 
-    APPROACHING: Una vez el dron despega a 5 metros de altura, se le envía el comando para volar directamente al primer waypoint de nuestra lista. Calculo la distancia euclídea y, cuando el error es menor a 15 cm, considero que ha llegado a la zona y paso al modo de barrido.
+APPROACHING: Una vez el dron despega a 5 metros de altura, se le envía el comando para volar directamente al primer waypoint de nuestra lista. Calculo la distancia euclídea y, cuando el error es menor a 15 cm, considero que ha llegado a la zona y paso al modo de barrido.
 
-    SWEEPING: El dron navega secuencialmente por la lista de waypoints calculada mientras el algoritmo de detección de rostros se ejecuta continuamente en las imágenes de la cámara. Al igual que en la aproximación, paso al siguiente punto de la lista cuando la distancia al objetivo es menor de 15 cm.
+SWEEPING: El dron navega secuencialmente por la lista de waypoints calculada mientras el algoritmo de detección de rostros se ejecuta continuamente en las imágenes de la cámara. Al igual que en la aproximación, paso al siguiente punto de la lista cuando la distancia al objetivo es menor de 15 cm.
 
-    RETURNING: He implementado un monitoreo simulado de batería. Si el nivel de batería desciende por debajo del 20%, el dron cambia automáticamente a este estado y se dirige a las coordenadas donde realizó el despegue para asegurar su retorno.
+RETURNING: He implementado un monitoreo simulado de batería. Si el nivel de batería desciende por debajo del 20%, el dron cambia automáticamente a este estado y se dirige a las coordenadas donde realizó el despegue para asegurar su retorno.
 
 
 ## Video
