@@ -42,5 +42,6 @@ El error de orientación hacia ese punto objetivo se introduce en un controlador
 
 ## Videos
 
-[Ver video](holonimic.mp4) 
-[Ver video](ackerman.mp4) 
+[Holonomic](holonimic.mp4) 
+
+[Ackerman](ackerman.mp4) 
