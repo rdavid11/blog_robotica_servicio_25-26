@@ -36,4 +36,4 @@ y le aplicamos las transformaciones necesarias con los vectores de rotacion y tr
 ## Video
 
 
-[▶ Ver vídeo](Screencast from 2026-07-01 18-42-20.mp4)
+[Ver video](autoloc_vision.mp4) 
